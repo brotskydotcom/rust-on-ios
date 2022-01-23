@@ -41,7 +41,6 @@
 		37697163275D9050001696C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3769716E2766BD12001696C9 /* keyring-testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "keyring-testerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		376971702766BD12001696C9 /* keyring_testerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyring_testerTests.swift; sourceTree = "<group>"; };
-		3779698027965EA200F0EF3C /* libSystem.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libSystem.tbd; path = usr/lib/libSystem.tbd; sourceTree = SDKROOT; };
 		37E1909927822D26004437FB /* PasswordOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOps.swift; sourceTree = "<group>"; };
 		37E1909B278981F1004437FB /* libkeyring.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkeyring.a; path = "../../Intermediates.noindex/keyring-tester.build/Debug-iphoneos/keyring-tester.build/DerivedSources/libkeyring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -69,7 +68,6 @@
 		37046C4C277FD6DE0095D055 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3779698027965EA200F0EF3C /* libSystem.tbd */,
 				37E1909B278981F1004437FB /* libkeyring.a */,
 				37046C54277FD80D0095D055 /* libresolv.tbd */,
 				37046C51277FD7CF0095D055 /* keyring-tester */,
@@ -427,7 +425,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"keyring-tester/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_BITCODE = NO;
@@ -462,7 +460,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"keyring-tester/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_BITCODE = NO;

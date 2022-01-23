@@ -16,30 +16,47 @@ struct ContentView: View {
     @State var alertTitle = ""
     @State var alertMessage = ""
     
+    enum Field: Hashable {
+        case service
+        case user
+        case passwordIn
+    }
+    
+    @FocusState var focusedField: Field?
+    
     var body: some View {
         Form {
             Section("Service Name") {
                 TextField("Service Name", text: $service)
                     .textInputAutocapitalization(.never)
+                    .focused($focusedField, equals: .service)
             }
             Section("User Name") {
                 TextField("User Name", text: $user)
                     .textInputAutocapitalization(.never)
+                    .focused($focusedField, equals: .user)
             }
             Section("Set or Update Password") {
                 TextField("Password to Set", text: $passwordIn)
                     .textInputAutocapitalization(.never)
+                    .focused($focusedField, equals: .passwordIn)
                 Button("Set Password") {
-                    add_or_update_password()
+                    if is_input_valid() {
+                        add_or_update_password()
+                    }
                 }
             }
             Section("Get or Delete Password") {
                 Button("Get Password") {
-                    get_password()
+                    if is_input_valid() {
+                        get_password()
+                    }
                 }
                 Text(passwordOut)
                 Button("Delete Password") {
-                    delete_password()
+                    if is_input_valid() {
+                        delete_password()
+                    }
                 }
             }
         }
@@ -49,15 +66,33 @@ struct ContentView: View {
         }
     }
     
+    func is_input_valid() -> Bool {
+        guard service.isEmpty || user.isEmpty else {
+            focusedField = nil
+            return true
+        }
+        if service.isEmpty {
+            focusedField = .service
+        } else if user.isEmpty {
+            focusedField = .user
+        }
+        showAlert = true
+        alertTitle = "Failure"
+        alertMessage = "You must specify both a service name and a user name"
+        return false
+    }
+    
     func add_or_update_password() {
         showAlert = true
         guard !passwordIn.isEmpty else {
+            focusedField = .passwordIn
             alertTitle = "Failure"
             alertMessage = "Can't set empty password; use Delete Password instead."
             return
         }
         do {
             try PasswordOps.setPassword(service: service, user: user, password: passwordIn)
+            passwordOut = ""
             alertTitle = "Success"
             alertMessage = "Password set!"
         } catch PasswordError.unexpected(let status) {
@@ -65,7 +100,7 @@ struct ContentView: View {
             alertMessage = "Set Password failed: OSStatus \(status)"
         } catch {
             alertTitle = "Failure"
-            alertMessage = "Set Password failed: \(error)"
+            alertMessage = "Set Password failed unexpectedly: \(error)"
         }
     }
     
