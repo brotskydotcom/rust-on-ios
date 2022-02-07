@@ -1,5 +1,5 @@
 #!/bin/bash
-set -x
+# set -x
 # create-iospw.sh
 # Build the correct Rust target and place
 # the resulting library in the build products

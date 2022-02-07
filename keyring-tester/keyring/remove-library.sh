@@ -1,8 +1,5 @@
 #!/bin/sh
-set -x
-#  delete-iospw.sh
-#  keyring-tester
-#
-#  Created by Daniel Brotsky on 1/1/22.
-#  
+# set -x
+# delete-iospw.sh
+# Remove the build Rust library so it will be rebuilt next time.
 rm -fv ${DERIVED_FILES_DIR}/libkeyring.a
