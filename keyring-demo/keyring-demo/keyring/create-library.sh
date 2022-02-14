@@ -34,7 +34,7 @@ fi
 rust_target="${rust_arch}-${rust_platform}${rust_abi}"
 #
 # Build library in debug or release
-build_args=(--manifest-path ../keyring-core/Cargo.toml --target "${rust_target}")
+build_args=(--manifest-path ../Cargo.toml --target "${rust_target}")
 if [[ "$CONFIGURATION" == "Release" ]]; then
 	rust_config="release"
 	env PATH="${build_path}" cargo build --release "${build_args[@]}"
@@ -46,4 +46,4 @@ else
 fi
 #
 # Copy the built library to the derived files directory
-cp -v "../target/${rust_target}/${rust_config}/libkeyring.a" ${DERIVED_FILES_DIR}
+cp -v "../../target/${rust_target}/${rust_config}/libkeyring.a" ${DERIVED_FILES_DIR}

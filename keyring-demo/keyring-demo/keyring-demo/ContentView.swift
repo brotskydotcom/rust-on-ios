@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var service = "test-service"
-    @State var user = "test-user"
-    @State var passwordIn = "test-password"
+    @State var service = "service-name"
+    @State var user = "user-name"
+    @State var passwordIn = "password"
     @State var passwordOut = ""
     @State var showAlert = false
     @State var alertTitle = ""
