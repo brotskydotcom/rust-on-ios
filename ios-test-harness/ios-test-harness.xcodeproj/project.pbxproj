@@ -7,55 +7,56 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		37046C55277FD81E0095D055 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 37046C54277FD80D0095D055 /* libresolv.tbd */; };
-		3769715D275D904E001696C9 /* keyring_testerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769715C275D904E001696C9 /* keyring_testerApp.swift */; };
-		3769715F275D904E001696C9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3769715E275D904E001696C9 /* ContentView.swift */; };
-		37697161275D9050001696C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37697160275D9050001696C9 /* Assets.xcassets */; };
-		37697164275D9050001696C9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37697163275D9050001696C9 /* Preview Assets.xcassets */; };
-		376971712766BD13001696C9 /* keyring_testerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 376971702766BD12001696C9 /* keyring_testerTests.swift */; };
-		37E1909A27822D26004437FB /* PasswordOps.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E1909927822D26004437FB /* PasswordOps.swift */; };
-		37E1909C278981F1004437FB /* libkeyring.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E1909B278981F1004437FB /* libkeyring.a */; };
+		3779698F27A6749700F0EF3C /* ios_test_harnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */; };
+		3779699127A6749700F0EF3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779699027A6749700F0EF3C /* ContentView.swift */; };
+		3779699327A6749A00F0EF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3779699227A6749A00F0EF3C /* Assets.xcassets */; };
+		3779699627A6749A00F0EF3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3779699527A6749A00F0EF3C /* Preview Assets.xcassets */; };
+		377969A027A6749A00F0EF3C /* ios_test_harnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */; };
+		377969BA27A6755A00F0EF3C /* TestRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377969B927A6755A00F0EF3C /* TestRunner.swift */; };
+		377969C227A6824D00F0EF3C /* libiostest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C127A6824D00F0EF3C /* libiostest.a */; };
+		377969C427A6826300F0EF3C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C327A6826300F0EF3C /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		376971722766BD13001696C9 /* PBXContainerItemProxy */ = {
+		3779699C27A6749A00F0EF3C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 37697151275D904E001696C9 /* Project object */;
+			containerPortal = 3779698327A6749700F0EF3C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 37697158275D904E001696C9;
-			remoteInfo = "keyring-tester";
+			remoteGlobalIDString = 3779698A27A6749700F0EF3C;
+			remoteInfo = "static-test-harness";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		37046C4B277FD5110095D055 /* keyring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = keyring.h; sourceTree = "<group>"; };
-		37046C51277FD7CF0095D055 /* keyring-tester */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "keyring-tester"; sourceTree = "<group>"; };
-		37046C54277FD80D0095D055 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
-		37046C57277FD8C90095D055 /* keyring-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "keyring-Bridging-Header.h"; sourceTree = "<group>"; };
-		37428831278112A1003BA3B6 /* create-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "create-library.sh"; sourceTree = "<group>"; };
-		374288432781433D003BA3B6 /* remove-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "remove-library.sh"; sourceTree = "<group>"; };
-		37697159275D904E001696C9 /* keyring-tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "keyring-tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3769715C275D904E001696C9 /* keyring_testerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyring_testerApp.swift; sourceTree = "<group>"; };
-		3769715E275D904E001696C9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		37697160275D9050001696C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		37697163275D9050001696C9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3769716E2766BD12001696C9 /* keyring-testerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "keyring-testerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		376971702766BD12001696C9 /* keyring_testerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyring_testerTests.swift; sourceTree = "<group>"; };
-		37E1909927822D26004437FB /* PasswordOps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordOps.swift; sourceTree = "<group>"; };
-		37E1909B278981F1004437FB /* libkeyring.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libkeyring.a; path = "../../Intermediates.noindex/keyring-tester.build/Debug-iphoneos/keyring-tester.build/DerivedSources/libkeyring.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3779698B27A6749700F0EF3C /* iOS Test Harness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Test Harness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_test_harnessApp.swift; sourceTree = "<group>"; };
+		3779699027A6749700F0EF3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3779699227A6749A00F0EF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3779699527A6749A00F0EF3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-test-harnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_test_harnessTests.swift; sourceTree = "<group>"; };
+		377969B927A6755A00F0EF3C /* TestRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunner.swift; sourceTree = "<group>"; };
+		377969BB27A675E800F0EF3C /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
+		377969BC27A6771500F0EF3C /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
+		377969BD27A67A3A00F0EF3C /* remove-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "remove-library.sh"; sourceTree = "<group>"; };
+		377969BE27A67A3A00F0EF3C /* create-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "create-library.sh"; sourceTree = "<group>"; };
+		377969C127A6824D00F0EF3C /* libiostest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiostest.a; path = "test-runner/libiostest.a"; sourceTree = "<group>"; };
+		377969C327A6826300F0EF3C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		37C7AC0127B8E179004C69C2 /* test-spec.sample.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-spec.sample.sh"; sourceTree = "<group>"; };
+		37C7AC0227BA095B004C69C2 /* test-spec.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-spec.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37697156275D904E001696C9 /* Frameworks */ = {
+		3779698827A6749700F0EF3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37E1909C278981F1004437FB /* libkeyring.a in Frameworks */,
-				37046C55277FD81E0095D055 /* libresolv.tbd in Frameworks */,
+				377969C227A6824D00F0EF3C /* libiostest.a in Frameworks */,
+				377969C427A6826300F0EF3C /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3769716B2766BD12001696C9 /* Frameworks */ = {
+		3779699827A6749A00F0EF3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -65,135 +66,136 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		37046C4C277FD6DE0095D055 /* Frameworks */ = {
+		3779698227A6749700F0EF3C = {
 			isa = PBXGroup;
 			children = (
-				37E1909B278981F1004437FB /* libkeyring.a */,
-				37046C54277FD80D0095D055 /* libresolv.tbd */,
-				37046C51277FD7CF0095D055 /* keyring-tester */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		3742883927812013003BA3B6 /* keyring */ = {
-			isa = PBXGroup;
-			children = (
-				37046C4B277FD5110095D055 /* keyring.h */,
-				37046C57277FD8C90095D055 /* keyring-Bridging-Header.h */,
-				37428831278112A1003BA3B6 /* create-library.sh */,
-				374288432781433D003BA3B6 /* remove-library.sh */,
-				37E1909927822D26004437FB /* PasswordOps.swift */,
-			);
-			path = keyring;
-			sourceTree = "<group>";
-		};
-		37697150275D904E001696C9 = {
-			isa = PBXGroup;
-			children = (
-				3742883927812013003BA3B6 /* keyring */,
-				3769715B275D904E001696C9 /* keyring-tester */,
-				3769716F2766BD12001696C9 /* keyring-testerTests */,
-				3769715A275D904E001696C9 /* Products */,
-				37046C4C277FD6DE0095D055 /* Frameworks */,
+				37C7AC0127B8E179004C69C2 /* test-spec.sample.sh */,
+				37C7AC0227BA095B004C69C2 /* test-spec.sh */,
+				377969B827A6751200F0EF3C /* test-runner */,
+				3779698D27A6749700F0EF3C /* ios-test-harness */,
+				3779699E27A6749A00F0EF3C /* ios-test-harnessTests */,
+				3779698C27A6749700F0EF3C /* Products */,
+				377969C027A6824C00F0EF3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		3769715A275D904E001696C9 /* Products */ = {
+		3779698C27A6749700F0EF3C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				37697159275D904E001696C9 /* keyring-tester.app */,
-				3769716E2766BD12001696C9 /* keyring-testerTests.xctest */,
+				3779698B27A6749700F0EF3C /* iOS Test Harness.app */,
+				3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		3769715B275D904E001696C9 /* keyring-tester */ = {
+		3779698D27A6749700F0EF3C /* ios-test-harness */ = {
 			isa = PBXGroup;
 			children = (
-				3769715C275D904E001696C9 /* keyring_testerApp.swift */,
-				3769715E275D904E001696C9 /* ContentView.swift */,
-				37697160275D9050001696C9 /* Assets.xcassets */,
-				37697162275D9050001696C9 /* Preview Content */,
+				3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */,
+				3779699027A6749700F0EF3C /* ContentView.swift */,
+				3779699227A6749A00F0EF3C /* Assets.xcassets */,
+				3779699427A6749A00F0EF3C /* Preview Content */,
 			);
-			path = "keyring-tester";
+			path = "ios-test-harness";
 			sourceTree = "<group>";
 		};
-		37697162275D9050001696C9 /* Preview Content */ = {
+		3779699427A6749A00F0EF3C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				37697163275D9050001696C9 /* Preview Assets.xcassets */,
+				3779699527A6749A00F0EF3C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3769716F2766BD12001696C9 /* keyring-testerTests */ = {
+		3779699E27A6749A00F0EF3C /* ios-test-harnessTests */ = {
 			isa = PBXGroup;
 			children = (
-				376971702766BD12001696C9 /* keyring_testerTests.swift */,
+				3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */,
 			);
-			path = "keyring-testerTests";
+			path = "ios-test-harnessTests";
+			sourceTree = "<group>";
+		};
+		377969B827A6751200F0EF3C /* test-runner */ = {
+			isa = PBXGroup;
+			children = (
+				377969BB27A675E800F0EF3C /* test.h */,
+				377969BC27A6771500F0EF3C /* test-Bridging-Header.h */,
+				377969BE27A67A3A00F0EF3C /* create-library.sh */,
+				377969BD27A67A3A00F0EF3C /* remove-library.sh */,
+				377969B927A6755A00F0EF3C /* TestRunner.swift */,
+			);
+			path = "test-runner";
+			sourceTree = "<group>";
+		};
+		377969C027A6824C00F0EF3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				377969C127A6824D00F0EF3C /* libiostest.a */,
+				377969C327A6826300F0EF3C /* libresolv.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		37697158275D904E001696C9 /* keyring-tester */ = {
+		3779698A27A6749700F0EF3C /* ios-test-harness */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 37697167275D9050001696C9 /* Build configuration list for PBXNativeTarget "keyring-tester" */;
+			buildConfigurationList = 377969AF27A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harness" */;
 			buildPhases = (
-				3742883F27813C42003BA3B6 /* create library */,
-				37697155275D904E001696C9 /* Sources */,
-				37697156275D904E001696C9 /* Frameworks */,
-				37697157275D904E001696C9 /* Resources */,
-				3742884227814179003BA3B6 /* remove library */,
+				377969BF27A6816900F0EF3C /* create library */,
+				3779698727A6749700F0EF3C /* Sources */,
+				3779698827A6749700F0EF3C /* Frameworks */,
+				3779698927A6749700F0EF3C /* Resources */,
+				377969C527A682E200F0EF3C /* delete library */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "keyring-tester";
-			productName = "keyring-tester";
-			productReference = 37697159275D904E001696C9 /* keyring-tester.app */;
+			name = "ios-test-harness";
+			productName = "static-test-harness";
+			productReference = 3779698B27A6749700F0EF3C /* iOS Test Harness.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3769716D2766BD12001696C9 /* keyring-testerTests */ = {
+		3779699A27A6749A00F0EF3C /* ios-test-harnessTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 376971742766BD13001696C9 /* Build configuration list for PBXNativeTarget "keyring-testerTests" */;
+			buildConfigurationList = 377969B227A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harnessTests" */;
 			buildPhases = (
-				3769716A2766BD12001696C9 /* Sources */,
-				3769716B2766BD12001696C9 /* Frameworks */,
-				3769716C2766BD12001696C9 /* Resources */,
+				3779699727A6749A00F0EF3C /* Sources */,
+				3779699827A6749A00F0EF3C /* Frameworks */,
+				3779699927A6749A00F0EF3C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				376971732766BD13001696C9 /* PBXTargetDependency */,
+				3779699D27A6749A00F0EF3C /* PBXTargetDependency */,
 			);
-			name = "keyring-testerTests";
-			productName = "keyring-testerTests";
-			productReference = 3769716E2766BD12001696C9 /* keyring-testerTests.xctest */;
+			name = "ios-test-harnessTests";
+			productName = "static-test-harnessTests";
+			productReference = 3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		37697151275D904E001696C9 /* Project object */ = {
+		3779698327A6749700F0EF3C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1310;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					37697158275D904E001696C9 = {
-						CreatedOnToolsVersion = 13.1;
+					3779698A27A6749700F0EF3C = {
+						CreatedOnToolsVersion = 13.2.1;
 					};
-					3769716D2766BD12001696C9 = {
-						CreatedOnToolsVersion = 13.1;
-						TestTargetID = 37697158275D904E001696C9;
+					3779699A27A6749A00F0EF3C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 3779698A27A6749700F0EF3C;
 					};
 				};
 			};
-			buildConfigurationList = 37697154275D904E001696C9 /* Build configuration list for PBXProject "keyring-tester" */;
+			buildConfigurationList = 3779698627A6749700F0EF3C /* Build configuration list for PBXProject "ios-test-harness" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -201,28 +203,28 @@
 				en,
 				Base,
 			);
-			mainGroup = 37697150275D904E001696C9;
-			productRefGroup = 3769715A275D904E001696C9 /* Products */;
+			mainGroup = 3779698227A6749700F0EF3C;
+			productRefGroup = 3779698C27A6749700F0EF3C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				37697158275D904E001696C9 /* keyring-tester */,
-				3769716D2766BD12001696C9 /* keyring-testerTests */,
+				3779698A27A6749700F0EF3C /* ios-test-harness */,
+				3779699A27A6749A00F0EF3C /* ios-test-harnessTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		37697157275D904E001696C9 /* Resources */ = {
+		3779698927A6749700F0EF3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				37697164275D9050001696C9 /* Preview Assets.xcassets in Resources */,
-				37697161275D9050001696C9 /* Assets.xcassets in Resources */,
+				3779699627A6749A00F0EF3C /* Preview Assets.xcassets in Resources */,
+				3779699327A6749A00F0EF3C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3769716C2766BD12001696C9 /* Resources */ = {
+		3779699927A6749A00F0EF3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -232,26 +234,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3742883F27813C42003BA3B6 /* create library */ = {
+		377969BF27A6816900F0EF3C /* create library */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			files = (
 			);
 			inputFileListPaths = (
 			);
 			inputPaths = (
+				"$(PROJECT_DIR)/test-spec.sh",
 			);
 			name = "create library";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILES_DIR)/libkeyring.a",
+				"$(DERIVED_FILE_DIR)/libiostest.a",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/bash;
-			shellScript = "source ${PROJECT_DIR}/keyring/create-library.sh\n\n";
+			shellPath = /bin/sh;
+			shellScript = "source ${PROJECT_DIR}/test-runner/create-library.sh\n";
+			showEnvVarsInLog = 0;
 		};
-		3742884227814179003BA3B6 /* remove library */ = {
+		377969C527A682E200F0EF3C /* delete library */ = {
 			isa = PBXShellScriptBuildPhase;
 			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
@@ -261,49 +265,48 @@
 			);
 			inputPaths = (
 			);
-			name = "remove library";
+			name = "delete library";
 			outputFileListPaths = (
 			);
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "source ${PROJECT_DIR}/keyring/remove-library.sh\n";
-			showEnvVarsInLog = 0;
+			shellScript = "source ${PROJECT_DIR}/test-runner/remove-library.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		37697155275D904E001696C9 /* Sources */ = {
+		3779698727A6749700F0EF3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3769715F275D904E001696C9 /* ContentView.swift in Sources */,
-				37E1909A27822D26004437FB /* PasswordOps.swift in Sources */,
-				3769715D275D904E001696C9 /* keyring_testerApp.swift in Sources */,
+				3779699127A6749700F0EF3C /* ContentView.swift in Sources */,
+				377969BA27A6755A00F0EF3C /* TestRunner.swift in Sources */,
+				3779698F27A6749700F0EF3C /* ios_test_harnessApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3769716A2766BD12001696C9 /* Sources */ = {
+		3779699727A6749A00F0EF3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				376971712766BD13001696C9 /* keyring_testerTests.swift in Sources */,
+				377969A027A6749A00F0EF3C /* ios_test_harnessTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		376971732766BD13001696C9 /* PBXTargetDependency */ = {
+		3779699D27A6749A00F0EF3C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 37697158275D904E001696C9 /* keyring-tester */;
-			targetProxy = 376971722766BD13001696C9 /* PBXContainerItemProxy */;
+			target = 3779698A27A6749700F0EF3C /* ios-test-harness */;
+			targetProxy = 3779699C27A6749A00F0EF3C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		37697165275D9050001696C9 /* Debug */ = {
+		377969AD27A6749B00F0EF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -354,7 +357,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -364,7 +367,7 @@
 			};
 			name = Debug;
 		};
-		37697166275D9050001696C9 /* Release */ = {
+		377969AE27A6749B00F0EF3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -409,7 +412,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -419,153 +422,139 @@
 			};
 			name = Release;
 		};
-		37697168275D9050001696C9 /* Debug */ = {
+		377969B027A6749B00F0EF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"keyring-tester/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
-				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "keyring-tester/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Keyring Demo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.keyring-demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.ios-test-harness";
+				PRODUCT_NAME = "iOS Test Harness";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/keyring/keyring-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/test-runner/test-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		37697169275D9050001696C9 /* Release */ = {
+		377969B127A6749B00F0EF3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
-				DEVELOPMENT_ASSET_PATHS = "\"keyring-tester/Preview Content\"";
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
-				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "keyring-tester/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Keyring Demo";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.keyring-demo";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.ios-test-harness";
+				PRODUCT_NAME = "iOS Test Harness";
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/keyring/keyring-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/test-runner/test-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		376971752766BD13001696C9 /* Debug */ = {
+		377969B327A6749B00F0EF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.keyring-testerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.static-test-harnessTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keyring-tester.app/keyring-tester";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Test Harness.app/iOS Test Harness";
 			};
 			name = Debug;
 		};
-		376971762766BD13001696C9 /* Release */ = {
+		377969B427A6749B00F0EF3C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.keyring-testerTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.static-test-harnessTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/keyring-tester.app/keyring-tester";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Test Harness.app/iOS Test Harness";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		37697154275D904E001696C9 /* Build configuration list for PBXProject "keyring-tester" */ = {
+		3779698627A6749700F0EF3C /* Build configuration list for PBXProject "ios-test-harness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37697165275D9050001696C9 /* Debug */,
-				37697166275D9050001696C9 /* Release */,
+				377969AD27A6749B00F0EF3C /* Debug */,
+				377969AE27A6749B00F0EF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		37697167275D9050001696C9 /* Build configuration list for PBXNativeTarget "keyring-tester" */ = {
+		377969AF27A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				37697168275D9050001696C9 /* Debug */,
-				37697169275D9050001696C9 /* Release */,
+				377969B027A6749B00F0EF3C /* Debug */,
+				377969B127A6749B00F0EF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		376971742766BD13001696C9 /* Build configuration list for PBXNativeTarget "keyring-testerTests" */ = {
+		377969B227A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harnessTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				376971752766BD13001696C9 /* Debug */,
-				376971762766BD13001696C9 /* Release */,
+				377969B327A6749B00F0EF3C /* Debug */,
+				377969B427A6749B00F0EF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 37697151275D904E001696C9 /* Project object */;
+	rootObject = 3779698327A6749700F0EF3C /* Project object */;
 }
