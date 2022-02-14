@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var service = "service-name"
-    @State var user = "user-name"
-    @State var passwordIn = "password"
+    @State var service = "service1"
+    @State var account = "account1"
+    @State var passwordIn = "password1"
     @State var passwordOut = ""
     @State var showAlert = false
     @State var alertTitle = ""
@@ -18,7 +18,7 @@ struct ContentView: View {
     
     enum Field: Hashable {
         case service
-        case user
+        case account
         case passwordIn
     }
     
@@ -31,10 +31,10 @@ struct ContentView: View {
                     .textInputAutocapitalization(.never)
                     .focused($focusedField, equals: .service)
             }
-            Section("User Name") {
-                TextField("User Name", text: $user)
+            Section("Account Name") {
+                TextField("Account Name", text: $account)
                     .textInputAutocapitalization(.never)
-                    .focused($focusedField, equals: .user)
+                    .focused($focusedField, equals: .account)
             }
             Section("Set or Update Password") {
                 TextField("Password to Set", text: $passwordIn)
@@ -67,14 +67,14 @@ struct ContentView: View {
     }
     
     func is_input_valid() -> Bool {
-        guard service.isEmpty || user.isEmpty else {
+        guard service.isEmpty || account.isEmpty else {
             focusedField = nil
             return true
         }
         if service.isEmpty {
             focusedField = .service
-        } else if user.isEmpty {
-            focusedField = .user
+        } else if account.isEmpty {
+            focusedField = .account
         }
         showAlert = true
         alertTitle = "Failure"
@@ -91,7 +91,7 @@ struct ContentView: View {
             return
         }
         do {
-            try PasswordOps.setPassword(service: service, user: user, password: passwordIn)
+            try PasswordOps.setPassword(service: service, user: account, password: passwordIn)
             passwordOut = ""
             alertTitle = "Success"
             alertMessage = "Password set!"
@@ -106,14 +106,14 @@ struct ContentView: View {
     
     func get_password() {
         do {
-            try passwordOut = PasswordOps.getPassword(service: service, user: user)
+            try passwordOut = PasswordOps.getPassword(service: service, user: account)
         } catch {
             passwordOut = ""
             showAlert = true
             alertTitle = "Failure"
             switch error {
             case PasswordError.notFound:
-                alertMessage = "No item found for \(service) and \(user)"
+                alertMessage = "No keychain entry found for service '\(service)' and account '\(account)'"
             case PasswordError.notString(let data):
                 var password = ""
                 _ = transcode(data.makeIterator(), from: UTF8.self, to: UTF8.self, stoppingOnError: false, into: {
@@ -131,7 +131,7 @@ struct ContentView: View {
     
     func delete_password() {
         do {
-            try PasswordOps.deletePassword(service: service, user: user)
+            try PasswordOps.deletePassword(service: service, user: account)
             passwordOut = ""
         } catch {
             showAlert = true
@@ -139,7 +139,7 @@ struct ContentView: View {
             switch error {
             case PasswordError.notFound:
                 passwordOut = ""
-                alertMessage = "No keychain entry found for \(service) and \(user)"
+                alertMessage = "No keychain entry found for service '\(service)' and account '\(account)'"
             case PasswordError.unexpected(let status):
                 alertMessage = "Delete Password failed: OSStatus \(status)"
             default:
