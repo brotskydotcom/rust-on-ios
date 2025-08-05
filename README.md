@@ -1,12 +1,14 @@
-# rust-on-ios
+# Rust on iOS/macOS
 
-This project is a resource for developers who want to build iOS apps that make use of Rust libraries.
+This project is a resource for developers who want to build iOS or macOS apps that make use of Rust libraries.
 
-The `ios-test-harness` Xcode project in this repo provides an iOS-based test framework that can be used similar to the standard Rust test framework.  It expects the crate being tested to provide a static library with a single `extern C` entrypoint with the signature `void test()`.  When run in the simulator (or on an iOS device), the test harness puts up a single screen with a `Run Test` button that can be used to invoke the `test()` entry.  When run via the Xcode `Project>Test` menu, the test harness invokes the `test()` entry as part of the test sequence.
+The `rust-test-harness` Xcode project in this repo provides an XCode-based application that can be used to invoke a Rust-built static library.  It expects the crate being tested to provide a static library with a single `extern C` entrypoint with the signature `void test(int op)` (on the Rust side, that’s `extern "C" fn test(op i32)` with name mangling turned off).  When the iOS build target is run in the simulator (or on an iOS device), or whenb the macOS build target is run on a Mac, the test harness puts up a screen with a picker for which test you want to run, and then it passes the index of that choice as the argument to the `test` entry.
 
-The idea is to have your `test()` entry run the same series of tests that you would run via the Rust test harness.  If the tests pass without panic, the run is successful.
+If the test runs without panicing, you get an alert on the iOS side that says to check the logs for details. Anything you print to stdout on the Rust side will be in the log.
 
 The test harness can be used on your own crates simply by cloning it locally and creating an appropriate `test-spec.sh` file at the top level of the project which declares where your crate is and how to build the test library.  You can copy the `test-spec.sample.sh` file to `test-spec.sh` in order to get started. Detailed instructions are in the next section.
+
+**PLEASE NOTE**: You will need your own Apple developer account in order to build and run this project, because both the iOS and macOS targets use provisioning profiles. You will have to change those provisioning profiles to ones that you own.
 
 ## Usage
 
@@ -24,9 +26,9 @@ If both `CRATE_PACKAGE` and `CRATE_EXAMPLE` are specified, the build will specif
 
 This test harness can be used to test both debug and release builds of your crate. Running the test harness in the Debug configuration will do a debug build of your library, and similarly for Release.
 
-The XCode target of your build (e.g., an ios device or an ios simulator) will be used to pick an appropriate target platform for your rust library build. You must have installed the appropriate target support on your machine.
+The XCode target of your build (e.g., a macOS device, an iOS device or an iOS device simulator) will be used to pick an appropriate target platform for your rust library build. You must have installed the appropriate target support on your machine.
 
-NOTE: This test harness assumes you have done a standard install of Rust using `rustup` and sets the `PATH` variable based on that when building your test library.
+(N.B. This test harness assumes you have done a standard install of Rust using `rustup` and sets the `PATH` variable based on that when building your test library.)
 
 For example: The `test-spec.sample.sh` file that comes with this project assumes that the directory containing the `ios-test-harness.xcodeproj` bundle (that is, the top level of this repository) is adjacent to the directory containing the crate being tested (called `keyring-rs`), and that the test library is an example in that crate.
 
@@ -41,6 +43,4 @@ at your option.
 
 ## Contribution
 
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in the work by you shall be dual licensed as above, without any
-additional terms or conditions.
+Unless you explicitly state otherwise, any contribution intentionally submitted for inclusion in the work by you shall be dual licensed as above, without any additional terms or conditions.
