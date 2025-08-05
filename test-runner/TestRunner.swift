@@ -6,7 +6,7 @@
 import Foundation
 
 class TestRunner {
-    static func runTest() {
-        test()
+	static func runTest(_ op: Int32) {
+        test(op)
     }
 }

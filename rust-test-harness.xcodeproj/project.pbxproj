@@ -3,42 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3730AE912E42AAE500208B7B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779699027A6749700F0EF3C /* ContentView.swift */; };
+		3730AE922E42AB2000208B7B /* TestRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377969B927A6755A00F0EF3C /* TestRunner.swift */; };
+		3730AE932E42AE1800208B7B /* libiostest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C127A6824D00F0EF3C /* libiostest.a */; };
+		3730AE942E42AE2500208B7B /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C327A6826300F0EF3C /* libresolv.tbd */; };
+		3730AE962E42AFCE00208B7B /* create-library.sh in Resources */ = {isa = PBXBuildFile; fileRef = 377969BE27A67A3A00F0EF3C /* create-library.sh */; };
+		3730AE982E42AFCE00208B7B /* test-spec.sh in Resources */ = {isa = PBXBuildFile; fileRef = 37C7AC0227BA095B004C69C2 /* test-spec.sh */; };
+		3730AE9A2E42AFCE00208B7B /* create-library.sh in Resources */ = {isa = PBXBuildFile; fileRef = 377969BE27A67A3A00F0EF3C /* create-library.sh */; };
+		3730AE9B2E42AFCE00208B7B /* test-spec.sh in Resources */ = {isa = PBXBuildFile; fileRef = 37C7AC0227BA095B004C69C2 /* test-spec.sh */; };
 		3779698F27A6749700F0EF3C /* ios_test_harnessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */; };
 		3779699127A6749700F0EF3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779699027A6749700F0EF3C /* ContentView.swift */; };
 		3779699327A6749A00F0EF3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3779699227A6749A00F0EF3C /* Assets.xcassets */; };
 		3779699627A6749A00F0EF3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3779699527A6749A00F0EF3C /* Preview Assets.xcassets */; };
-		377969A027A6749A00F0EF3C /* ios_test_harnessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */; };
 		377969BA27A6755A00F0EF3C /* TestRunner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 377969B927A6755A00F0EF3C /* TestRunner.swift */; };
 		377969C227A6824D00F0EF3C /* libiostest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C127A6824D00F0EF3C /* libiostest.a */; };
 		377969C427A6826300F0EF3C /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 377969C327A6826300F0EF3C /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		3779699C27A6749A00F0EF3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3779698327A6749700F0EF3C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3779698A27A6749700F0EF3C;
-			remoteInfo = "static-test-harness";
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
+		3730AE852E42A6B900208B7B /* macos-test-harness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "macos-test-harness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3779698B27A6749700F0EF3C /* iOS Test Harness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS Test Harness.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_test_harnessApp.swift; sourceTree = "<group>"; };
 		3779699027A6749700F0EF3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3779699227A6749A00F0EF3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3779699527A6749A00F0EF3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-test-harnessTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ios_test_harnessTests.swift; sourceTree = "<group>"; };
 		377969B927A6755A00F0EF3C /* TestRunner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRunner.swift; sourceTree = "<group>"; };
 		377969BB27A675E800F0EF3C /* test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = test.h; sourceTree = "<group>"; };
 		377969BC27A6771500F0EF3C /* test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "test-Bridging-Header.h"; sourceTree = "<group>"; };
-		377969BD27A67A3A00F0EF3C /* remove-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "remove-library.sh"; sourceTree = "<group>"; };
 		377969BE27A67A3A00F0EF3C /* create-library.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "create-library.sh"; sourceTree = "<group>"; };
 		377969C127A6824D00F0EF3C /* libiostest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiostest.a; path = "test-runner/libiostest.a"; sourceTree = "<group>"; };
 		377969C327A6826300F0EF3C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
@@ -46,20 +41,26 @@
 		37C7AC0227BA095B004C69C2 /* test-spec.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-spec.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		3730AE862E42A6B900208B7B /* macos-test-harness */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "macos-test-harness"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		3730AE822E42A6B900208B7B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3730AE932E42AE1800208B7B /* libiostest.a in Frameworks */,
+				3730AE942E42AE2500208B7B /* libresolv.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3779698827A6749700F0EF3C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				377969C227A6824D00F0EF3C /* libiostest.a in Frameworks */,
 				377969C427A6826300F0EF3C /* libresolv.tbd in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3779699827A6749A00F0EF3C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,7 +74,7 @@
 				37C7AC0227BA095B004C69C2 /* test-spec.sh */,
 				377969B827A6751200F0EF3C /* test-runner */,
 				3779698D27A6749700F0EF3C /* ios-test-harness */,
-				3779699E27A6749A00F0EF3C /* ios-test-harnessTests */,
+				3730AE862E42A6B900208B7B /* macos-test-harness */,
 				3779698C27A6749700F0EF3C /* Products */,
 				377969C027A6824C00F0EF3C /* Frameworks */,
 			);
@@ -83,7 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				3779698B27A6749700F0EF3C /* iOS Test Harness.app */,
-				3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */,
+				3730AE852E42A6B900208B7B /* macos-test-harness.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,7 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */,
-				3779699027A6749700F0EF3C /* ContentView.swift */,
 				3779699227A6749A00F0EF3C /* Assets.xcassets */,
 				3779699427A6749A00F0EF3C /* Preview Content */,
 			);
@@ -107,22 +107,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		3779699E27A6749A00F0EF3C /* ios-test-harnessTests */ = {
-			isa = PBXGroup;
-			children = (
-				3779699F27A6749A00F0EF3C /* ios_test_harnessTests.swift */,
-			);
-			path = "ios-test-harnessTests";
-			sourceTree = "<group>";
-		};
 		377969B827A6751200F0EF3C /* test-runner */ = {
 			isa = PBXGroup;
 			children = (
 				377969BB27A675E800F0EF3C /* test.h */,
 				377969BC27A6771500F0EF3C /* test-Bridging-Header.h */,
 				377969BE27A67A3A00F0EF3C /* create-library.sh */,
-				377969BD27A67A3A00F0EF3C /* remove-library.sh */,
 				377969B927A6755A00F0EF3C /* TestRunner.swift */,
+				3779699027A6749700F0EF3C /* ContentView.swift */,
 			);
 			path = "test-runner";
 			sourceTree = "<group>";
@@ -139,6 +131,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		3730AE842E42A6B900208B7B /* macos-test-harness */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3730AE902E42A6B900208B7B /* Build configuration list for PBXNativeTarget "macos-test-harness" */;
+			buildPhases = (
+				3730AE952E42AEA800208B7B /* create library */,
+				3730AE812E42A6B900208B7B /* Sources */,
+				3730AE822E42A6B900208B7B /* Frameworks */,
+				3730AE832E42A6B900208B7B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				3730AE862E42A6B900208B7B /* macos-test-harness */,
+			);
+			name = "macos-test-harness";
+			packageProductDependencies = (
+			);
+			productName = "macos-test-harness";
+			productReference = 3730AE852E42A6B900208B7B /* macos-test-harness.app */;
+			productType = "com.apple.product-type.application";
+		};
 		3779698A27A6749700F0EF3C /* ios-test-harness */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 377969AF27A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harness" */;
@@ -147,7 +162,6 @@
 				3779698727A6749700F0EF3C /* Sources */,
 				3779698827A6749700F0EF3C /* Frameworks */,
 				3779698927A6749700F0EF3C /* Resources */,
-				377969C527A682E200F0EF3C /* delete library */,
 			);
 			buildRules = (
 			);
@@ -158,24 +172,6 @@
 			productReference = 3779698B27A6749700F0EF3C /* iOS Test Harness.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3779699A27A6749A00F0EF3C /* ios-test-harnessTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 377969B227A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harnessTests" */;
-			buildPhases = (
-				3779699727A6749A00F0EF3C /* Sources */,
-				3779699827A6749A00F0EF3C /* Frameworks */,
-				3779699927A6749A00F0EF3C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				3779699D27A6749A00F0EF3C /* PBXTargetDependency */,
-			);
-			name = "ios-test-harnessTests";
-			productName = "static-test-harnessTests";
-			productReference = 3779699B27A6749A00F0EF3C /* ios-test-harnessTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -183,19 +179,18 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1320;
+				LastSwiftUpdateCheck = 1640;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					3730AE842E42A6B900208B7B = {
+						CreatedOnToolsVersion = 16.4;
+					};
 					3779698A27A6749700F0EF3C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					3779699A27A6749A00F0EF3C = {
-						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 3779698A27A6749700F0EF3C;
-					};
 				};
 			};
-			buildConfigurationList = 3779698627A6749700F0EF3C /* Build configuration list for PBXProject "ios-test-harness" */;
+			buildConfigurationList = 3779698627A6749700F0EF3C /* Build configuration list for PBXProject "rust-test-harness" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -209,33 +204,61 @@
 			projectRoot = "";
 			targets = (
 				3779698A27A6749700F0EF3C /* ios-test-harness */,
-				3779699A27A6749A00F0EF3C /* ios-test-harnessTests */,
+				3730AE842E42A6B900208B7B /* macos-test-harness */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		3730AE832E42A6B900208B7B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3730AE9A2E42AFCE00208B7B /* create-library.sh in Resources */,
+				3730AE9B2E42AFCE00208B7B /* test-spec.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3779698927A6749700F0EF3C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3779699627A6749A00F0EF3C /* Preview Assets.xcassets in Resources */,
+				3730AE962E42AFCE00208B7B /* create-library.sh in Resources */,
+				3730AE982E42AFCE00208B7B /* test-spec.sh in Resources */,
 				3779699327A6749A00F0EF3C /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3779699927A6749A00F0EF3C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3730AE952E42AEA800208B7B /* create library */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(PROJECT_DIR)/test-spec.sh",
+				"${PROJECT_DIR}/test-runner/create-library.sh",
+			);
+			name = "create library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/${ARCHS}/libiostest.a",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "source ${PROJECT_DIR}/test-runner/create-library.sh\n";
+			showEnvVarsInLog = 0;
+		};
 		377969BF27A6816900F0EF3C /* create library */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -255,28 +278,18 @@
 			shellScript = "source ${PROJECT_DIR}/test-runner/create-library.sh\n";
 			showEnvVarsInLog = 0;
 		};
-		377969C527A682E200F0EF3C /* delete library */ = {
-			isa = PBXShellScriptBuildPhase;
-			alwaysOutOfDate = 1;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "delete library";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "source ${PROJECT_DIR}/test-runner/remove-library.sh\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		3730AE812E42A6B900208B7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3730AE922E42AB2000208B7B /* TestRunner.swift in Sources */,
+				3730AE912E42AAE500208B7B /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3779698727A6749700F0EF3C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -287,25 +300,98 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3779699727A6749A00F0EF3C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				377969A027A6749A00F0EF3C /* ios_test_harnessTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		3779699D27A6749A00F0EF3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3779698A27A6749700F0EF3C /* ios-test-harness */;
-			targetProxy = 3779699C27A6749A00F0EF3C /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin XCBuildConfiguration section */
+		3730AE8E2E42A6B900208B7B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "macos-test-harness/macos_test_harness.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 85H73V9R3F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-runner",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Rust Test Harness MacOS Development";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/test-runner/test-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3730AE8F2E42A6B900208B7B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = "macos-test-harness/macos_test_harness.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = 85H73V9R3F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/test-runner",
+				);
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Rust Test Harness MacOS Development";
+				REGISTER_APP_GROUPS = YES;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_DIR}/test-runner/test-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		377969AD27A6749B00F0EF3C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -432,10 +518,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BJ65G9LZ5;
+				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "IOS Tester";
+				INFOPLIST_KEY_CFBundleDisplayName = "iOS Rust Test Harness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -446,10 +532,11 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.clickonetwo.ios-test-harness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "iOS Test Harness";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/test-runner/test-Bridging-Header.h";
@@ -466,10 +553,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
-				DEVELOPMENT_TEAM = 9BJ65G9LZ5;
+				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "IOS Tester";
+				INFOPLIST_KEY_CFBundleDisplayName = "iOS Rust Test Harness";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -480,10 +567,11 @@
 					"@executable_path/Frameworks",
 				);
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
+				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
 				MARKETING_VERSION = 1.0;
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.clickonetwo.ios-test-harness";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "iOS Test Harness";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/test-runner/test-Bridging-Header.h";
@@ -492,50 +580,19 @@
 			};
 			name = Release;
 		};
-		377969B327A6749B00F0EF3C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85H73V9R3F;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.static-test-harnessTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Test Harness.app/iOS Test Harness";
-			};
-			name = Debug;
-		};
-		377969B427A6749B00F0EF3C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85H73V9R3F;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.static-test-harnessTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS Test Harness.app/iOS Test Harness";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3779698627A6749700F0EF3C /* Build configuration list for PBXProject "ios-test-harness" */ = {
+		3730AE902E42A6B900208B7B /* Build configuration list for PBXNativeTarget "macos-test-harness" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3730AE8E2E42A6B900208B7B /* Debug */,
+				3730AE8F2E42A6B900208B7B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3779698627A6749700F0EF3C /* Build configuration list for PBXProject "rust-test-harness" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				377969AD27A6749B00F0EF3C /* Debug */,
@@ -549,15 +606,6 @@
 			buildConfigurations = (
 				377969B027A6749B00F0EF3C /* Debug */,
 				377969B127A6749B00F0EF3C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		377969B227A6749B00F0EF3C /* Build configuration list for PBXNativeTarget "ios-test-harnessTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				377969B327A6749B00F0EF3C /* Debug */,
-				377969B427A6749B00F0EF3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
