@@ -32,6 +32,8 @@ The XCode target of your build (e.g., a macOS device, an iOS device or an iOS de
 
 For example: The `test-spec.sample.sh` file that comes with this project assumes that the directory containing the `ios-test-harness.xcodeproj` bundle (that is, the top level of this repository) is adjacent to the directory containing the crate being tested (called `keyring-rs`), and that the test library is an example in that crate.
 
+Before running the test harness, you will want to edit the code in `ContentView.swift` (in the `test-runner` directory) to have the correct descriptions (and correct number) of test opcodes for your library. A future project of mine will be to load the opcodes and descriptions from the static library that you test.
+
 ## License
 
 Licensed under either of
