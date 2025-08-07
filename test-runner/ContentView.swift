@@ -12,33 +12,47 @@ struct TestChoice: Identifiable {
 	let description: String
 }
 
-let testOps = [
-	TestChoice(id: 0, description: "Create entry with no user presence required"),
-	TestChoice(id: 1, description: "Create entry with user presence required"),
-	TestChoice(id: 2, description: "Set an existing entry"),
-	TestChoice(id: 3, description: "Read an existing entry"),
-	TestChoice(id: 4, description: "Delete an existing entry"),
-];
+func createTestOps() -> [TestChoice] {
+	let choiceString = TestRunner.getTestChoices()
+	let choices = choiceString.split(separator: "\n", omittingEmptySubsequences: true)
+	var result: [TestChoice] = []
+	for i in 0..<choices.count {
+		let choice = String(choices[i]).trimmingCharacters(in: .whitespaces)
+		if choice.isEmpty { continue }
+		result.append(TestChoice(id: Int32(i), description: String(choices[i]).trimmingCharacters(in: .whitespaces)))
+	}
+	return result
+}
 
 struct ContentView: View {
-    @State var showAlert = false;
-	@State var testOpIndex: Int32 = 0;
+	@State var testOpIndex: Int32 = 0
+	@State var testInProgress: Bool = false
+
+	let testOps = createTestOps()
 
     var body: some View {
 		Picker("Choose operation", selection: $testOpIndex) {
 			ForEach(testOps) {
 				Text($0.description).tag($0.id)
 			}
-		}
-        Button("Run Test") {
-            TestRunner.runTest(testOpIndex)
-            showAlert = true
 		}.padding(10)
-        .alert(isPresented: $showAlert) {
-            Alert(title: Text("Test Result"),
-                  message: Text("No crash! See the log for details."))
-        }
+		if testInProgress {
+			ProgressView("Test in progress...").padding(10)
+		} else {
+			Button("Run Test") {
+				runTest()
+			}.padding(10)
+		}
     }
+
+	func runTest() {
+		testInProgress = true
+		let task = DispatchWorkItem {
+			TestRunner.runTest(self.testOpIndex)
+			self.testInProgress = false
+		}
+		task.perform()
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

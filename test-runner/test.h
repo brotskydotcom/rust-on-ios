@@ -8,4 +8,6 @@
 
 extern void test(int op);
 
+extern const char* choices();
+
 #endif /* test_h */

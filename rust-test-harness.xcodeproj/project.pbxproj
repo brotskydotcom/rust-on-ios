@@ -39,6 +39,7 @@
 		377969C327A6826300F0EF3C /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		37C7AC0127B8E179004C69C2 /* test-spec.sample.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-spec.sample.sh"; sourceTree = "<group>"; };
 		37C7AC0227BA095B004C69C2 /* test-spec.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "test-spec.sh"; sourceTree = "<group>"; };
+		37E6FB622E43C59A00D77CA6 /* ios-test-harness.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "ios-test-harness.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -92,6 +93,7 @@
 		3779698D27A6749700F0EF3C /* ios-test-harness */ = {
 			isa = PBXGroup;
 			children = (
+				37E6FB622E43C59A00D77CA6 /* ios-test-harness.entitlements */,
 				3779698E27A6749700F0EF3C /* ios_test_harnessApp.swift */,
 				3779699227A6749A00F0EF3C /* Assets.xcassets */,
 				3779699427A6749A00F0EF3C /* Preview Content */,
@@ -311,12 +313,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "macos-test-harness/macos_test_harness.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 85H73V9R3F;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -334,11 +335,10 @@
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Rust Test Harness MacOS Development";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
@@ -356,12 +356,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
 				CODE_SIGN_ENTITLEMENTS = "macos-test-harness/macos_test_harness.entitlements";
-				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
-				"DEVELOPMENT_TEAM[sdk=macosx*]" = 85H73V9R3F;
+				CURRENT_PROJECT_VERSION = 2.0.1;
+				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -379,11 +378,10 @@
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 15.5;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "Rust Test Harness MacOS Development";
 				REGISTER_APP_GROUPS = YES;
 				SDKROOT = macosx;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -515,8 +513,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ios-test-harness/ios-test-harness.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_PREVIEWS = YES;
@@ -534,7 +533,7 @@
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "iOS Test Harness";
@@ -550,8 +549,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "ios-test-harness/ios-test-harness.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"ios-test-harness/Preview Content\"";
 				DEVELOPMENT_TEAM = 85H73V9R3F;
 				ENABLE_PREVIEWS = YES;
@@ -569,7 +569,7 @@
 				LIBRARY_SEARCH_PATHS = "$(DERIVED_FILES_DIR)";
 				"LIBRARY_SEARCH_PATHS[arch=*]" = "$(DERIVED_FILES_DIR)";
 				LINKER_DISPLAYS_MANGLED_NAMES = NO;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				OTHER_LDFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.brotsky.rust-test-harness";
 				PRODUCT_NAME = "iOS Test Harness";
