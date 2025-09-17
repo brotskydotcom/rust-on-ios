@@ -71,11 +71,14 @@ fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
 	target_config="release"
 	env PATH="${build_path}" cargo build --release "${build_args[@]}"
+	if [[ "$?" != "0" ]]; then exit 1; fi
 elif [[ "$CONFIGURATION" == "Debug" ]]; then
 	target_config="debug"
 	env PATH="${build_path}" cargo build "${build_args[@]}"
+	if [[ "$?" != "0" ]]; then exit 1; fi
 else
     echo "error: Unexpected build configuration: $CONFIGURATION"
+    exit 1
 fi
 #
 # Copy the built library to the derived files directory
